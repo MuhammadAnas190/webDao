@@ -8,7 +8,7 @@ import {
 interface ButtonProps extends Omit<BaseButtonProps, "variant"> {
   children: React.ReactNode;
   variant?: BaseButtonProps["variant"] | "outline";
-  roundness?: "square" | "round" | "pill";
+  roundness?: "square" | "round" | "full";
   isFullWidth?: boolean;
   isExternal?: boolean;
   isLoading?: boolean;
@@ -87,7 +87,7 @@ const Button = forwardRef<typeof BaseButton, ButtonProps>(
           roundness: {
             square: "rounded-none",
             round: "rounded-md",
-            pill: "rounded-full",
+            full: "rounded-full",
           },
         },
 

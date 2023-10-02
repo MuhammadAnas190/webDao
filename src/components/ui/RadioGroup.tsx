@@ -4,7 +4,6 @@ import {
   RadioGroupProps as BaseRadioGroupProps,
   RadioProps as BaseRadioProps,
 } from "@nextui-org/radio";
-// import { cn } from "@nextui-org/react";
 import { cva } from "class-variance-authority";
 
 interface RadioGroupProps extends BaseRadioGroupProps {
@@ -50,8 +49,8 @@ RadioGroup.Radio = ({ type, ...props }: RadioProps) => {
     variants: {
       intent: {
         card: [
-          "inline-flex m-0 bg-content1 hover:bg-content2 items-center justify-between",
-          "flex-row-reverse max-w-[300px] cursor-pointer rounded-lg gap-4 p-4 border-2 border-dashed",
+          "inline-flex m-0 bg-content1 hover:bg-content2 items-center justify-between radio-button",
+          "max-w-[300px] cursor-pointer rounded-lg gap-4 p-4 border-2 border-dashed",
           "data-[selected=true]:border-primary data-[selected=true]:border-solid",
         ],
       },
